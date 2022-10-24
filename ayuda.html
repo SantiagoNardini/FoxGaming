@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/estilos.css">
   <title>Ayuda</title>
 </head>
@@ -13,62 +15,116 @@
   <header>
     <h1 class="Fox">Fox Gaming</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="promociones.html">Promociones</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="ayuda.html">FAQ</a></li>
-        <li><a href="sponsors.html">Sponsors</a></li>
+      <ul class="navLista">
+        <li class="navItem">
+        <li class="navItem"><a href="index.html">Inicio</a></li>
+        <li class="navItem"><a href="promociones.html">Promociones</a></li>
+        <li class="navItem"><a href="contacto.html">Contacto</a></li>
+        <li class="navItem"><a href="ayuda.html">FAQ</a></li>
+        <li class="navItem"><a href="sponsors.html">Sponsors</a></li>
       </ul>
+      </li>
     </nav>
   </header>
   <main>
-    <section class="ayuda">
-      <h2 class="preguntaAyuda">¿Puedo reservar un producto?</h2>
-      <div class="respuestaAyuda">
-        <p>Se tomarán reservas solo de aquellos productos que estén en stock, esto es así ya que no podemos garantizar
-          que un producto que no está en stock vuelva a ingresar, ni el precio que tendrá.
 
-          Las reservas duran 48hs y se toman una vez que el producto haya sido abonado en su totalidad.</p>
-      </div>
-      <h2 class="preguntaAyuda">¿Debo enviar el comprobante de pago de mi compra?</h2>
-      <div class="respuestaAyuda">
-        <p>Sí, en el caso de que hayas abonado con una solicitud de dinero de Mercado Pago o transferencia bancaria.
+    <section class="ayuda">
+
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Puedo reservar un producto?
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Se tomarán reservas solo de aquellos productos que estén en stock, esto es así ya que no podemos
+              garantizar
+              que un producto que no está en stock vuelva a ingresar, ni el precio que tendrá.
+              <br>
+              Las reservas duran 48hs y se toman una vez que el producto haya sido abonado en su totalidad.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Debo enviar el comprobante de pago de mi compra?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Sí, en el caso de que hayas abonado con una solicitud de dinero de Mercado Pago o transferencia bancaria.
           Debés enviar el comprobante a nuestro Whatsapp con tu número de pedido. Recordá que tenés 48hs para enviarlo,
           independientemente de los plazos que informe Mercado pago.
-          Los pedidos que no se registren abonados dentro de este plazo se eliminan.</p>
-      </div>
-      <h2 class="preguntaAyuda">Necesito un presupuesto para armar una PC</h2>
-      <div class="respuestaAyuda">
-        <p>Si buscas armar una PC, podemos ayudarte creando un presupuesto ajustado a tu necesidad y gustos. Los
-          presupuestos tienen una validez de 24hs. Transcurrido este plazo se deberá recotizar ya que los precios de los
-          productos pueden variar sin previo aviso.
-
-          Si ya sabes con qué productos querés armar tu PC, no es necesario solicitar un presupuesto. Podés chequear
-          precios y stock en nuestra web, recordá que todos los productos que tenemos disponible se encuentra allí. Si
-          no encontrás lo que buscabas consultanos para ofrecerte otras opciones disponibles.</p>
-      </div>
-      <h2 class="preguntaAyuda">¿Cómo se realizan los envíos?</h2>
-      <div class="respuestaAyuda">
-        <p>Trabajamos con Correo Argentino, OCA o motomensajería. .</p>
-      </div>
-      <h2 class="preguntaAyuda">¿Cuánto tarda en llegar el pedido?</h2>
-      <div class="respuestaAyuda">
-        <p>El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra entre 3 y 7
-          días hábiles luego de acreditado el pago.</p>
+          <br>
+          Los pedidos que no se registren abonados dentro de este plazo se eliminan.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Cómo se realizan los envíos?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Trabajamos con Correo Argentino, OCA o motomensajería.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFourth">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                ¿Cuánto tarda en llegar el pedido?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFourth" class="collapse" aria-labelledby="headingFourth" data-parent="#accordionExample">
+            <div class="card-body">
+              El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra entre 3 y 7
+          días hábiles luego de acreditado el pago.
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <section class="botonesContacto">
+      <div class="enviarAbajo"></div>
       <p>Contacto via redes</p>
       <div class="logoContacto"><img src="img/instalogo.png" alt="Instagram" class="logoFooter"></div>
       <div class="logoContacto"><img src="img/fblogo.png" alt="facebook" class="logoFooter"></div>
       <div class="logoContacto"><img src="img/twlogo.png" alt="Twitter" class="logoFooter"></div>
       <div class="logoContacto"><img src="img/ytlogo.png" alt="Youtube" class="logoFooter"></div>
       <p>Copyright © 2022 | Todos los derechos reservados.</p>
+    </div>
     </section>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
