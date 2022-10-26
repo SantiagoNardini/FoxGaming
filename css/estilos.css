@@ -25,36 +25,36 @@ header {
 
 }
 
-.bg-dark{
-background-color: orangered!important;
+.bg-dark {
+    background-color: orangered !important;
 }
 
-.navbar{
+.navbar {
     font-size: 20px;
-justify-content: flex-end;
+    justify-content: flex-end;
 }
 
-a.nav-link{
-color: white!important;
+a.nav-link {
+    color: white !important;
 }
 
 .navLista {
     font-size: 22px;
-  background: orangered;
-  padding: 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    background: orangered;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .navItem {
-  list-style: none;
-  margin-right: 2rem;
+    list-style: none;
+    margin-right: 2rem;
 }
 
 .navItem a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -154,6 +154,7 @@ color: white!important;
 
 }
 
+
 .botonesContacto {
     color: black;
     background-color: orangered;
@@ -178,6 +179,34 @@ color: white!important;
 
 /*CONTACTO*/
 
+.elegirPais {
+    padding-top: 10px;
+
+}
+
+.gridContactanos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.gridConsultas {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.enviarContacto{
+background-color: orangered;
+color: white;
+}
+
+
+input {
+    margin-bottom: 10px;
+
+}
+
 .contactoPersonal {
     text-align: center;
     padding: 20px;
@@ -185,21 +214,48 @@ color: white!important;
 }
 
 .contactoForms {
+    box-sizing: border-box;
     text-align: center;
     padding-left: 20px;
     font-size: 20px;
 
 }
 
-.mapa {
-    padding-top: 50px;
-    padding-left: 30%;
-    padding-bottom: 10px;
+.gridMapa {
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
 
 }
 
+.mapa {
+    display: flex;
+    padding: 50px;
+}
 
+iframe {
+    max-width: 100%;
 
+}
+
+@media screen and (max-width: 1200px) {
+    .mapa {
+        padding: 12px;
+        width: 1200px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .gridMapa {
+        padding: 0px;
+    }
+
+    .gridContactanos {
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+}
 
 /*PROMOCIONES*/
 
@@ -364,32 +420,32 @@ section.ayuda {
 
 }
 
-.btn-link{
-color: orangered;
+.btn-link {
+    color: orangered;
 }
 
-.btn-link:hover{
+.btn-link:hover {
     color: black;
     text-decoration: none;
-    }
+}
 
-.card-support{
-margin: 40px;
-pad: 20px;
+.card-support {
+    margin: 40px;
+    pad: 20px;
 
 }
 
-.btn-primary{
-background-color: orangered;
-border-color: black;
+.btn-primary {
+    background-color: orangered;
+    border-color: black;
 }
 
-.btn-primary:hover{
-background-color: black;
+.btn-primary:hover {
+    background-color: black;
 }
 
-.card-header{
-color: orangered;
-font-size: 18px;
+.card-header {
+    color: orangered;
+    font-size: 18px;
 
 }

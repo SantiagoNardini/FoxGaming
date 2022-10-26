@@ -2,96 +2,92 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <title>Contacto</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <title>Contacto</title>
 </head>
 
 <body>
-    <header>
-        <h1 class="Fox">Fox Gaming</h1>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-
-            <!-- Links -->
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="promociones.html">Promociones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ayuda.html">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sponsors.html">Sponsors</a>
-              </li>
-            </ul>
-          </nav>
-    </header>
-    <h2 class="contactoPersonal">Contactar con personal</h2>
-    <div class="contactoForms">
-        <p>
-            <label>Nombre: <input nombre="nombre" placeholder="Escriba aquí su nombre."></label>
-        </p>
-        <p>
-            <label>Apellido: <input apellido="apellido" placeholder="Escriba aquí su apellido."></label>
-        </p>
-
-        <p>
-            <label>Email:<input type="email" placeholder="Escriba aquí su mail." mail="email"></label>
-        </p>
-        <p>
-            <label>
-                Consulta:
-                <br />
-                <textarea consulta="consulta" placeholder="Escriba aquí su consulta." cols="30" rows="3"></textarea>
-            </label>
-        </p>
-        <p>
-            <button type="enviar" class="enviarContacto">Enviar</button>
-        </p>
-        <p>
-            <label for="reset">
-                <input type="reset" value="Restablecer" class="restablecerContacto" id="resetForm">
-            </label>
-        </p>
-        </fieldset>
-        </form>
+  <header>
+    <h1 class="Fox">Fox Gaming</h1>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="promociones.html">Promociones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ayuda.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sponsors.html">Sponsors</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="gridContactanos">
+    <div class="gridConsultas">
+      <h3>Dejanos tu mensaje</h3>
+      <label for="nombre-completo" name="nombre-completo" id="nombre-completo"></label>
+      <input type="text" placeholder="Nombre y apellido" name="nombre-completo" class="datosContacto input" required>
+      <label for="email" name="email" id="email"></label>
+      <input type="email" placeholder="Correo electrónico" name="email" id="email" class="datosContacto input" required>
+      <textarea name="consulta" placeholder="Escriba aquí su consulta." id="consulta" cols="50" rows="10"
+        class="textAreaContacto input" required></textarea>
+      <div class="elegirPais">
+        <label for="pais" name="pais" id="seleccionarPais">
+          <div>
+            <select name="pais" class="select input">
+              <option value="seleccion">Seleccione su país</option>
+              <option value="arg">Argentina</option>
+              <option value="cl">Chile</option>
+              <option value="uy">Uruguay</option>
+            </select>
+          </div>
+      </div>
+      </label>
+      <label for="submit">
+        <input type="submit" value=" Enviar " class="enviarContacto" id="enviarForm">
+      </label>
     </div>
-    <div class="mapa">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.053009644741!2d-58.5018663842393!3d-34.50154035960688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1052c8cfced%3A0x28572d4c7f8a06cb!2sD%C3%ADaz%20V%C3%A9lez%201775%2C%20B1636EEG%20Olivos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1664944532389!5m2!1ses!2sar"
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </form>
+    </div>
+    <div class="gridMapa">
+      <iframe class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.053009644741!2d-58.5018663842393!3d-34.50154035960688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1052c8cfced%3A0x28572d4c7f8a06cb!2sD%C3%ADaz%20V%C3%A9lez%201775%2C%20B1636EEG%20Olivos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1664944532389!5m2!1ses!2sar"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </div>
-    <footer class="footer">
-        <section class="botonesContacto">
-            <p>Contacto via redes</p>
-            <div class="logoContacto"><img src="img/instalogo.png" alt="Instagram" class="logoFooter"></div>
-            <div class="logoContacto"><img src="img/fblogo.png" alt="facebook" class="logoFooter"></div>
-            <div class="logoContacto"><img src="img/twlogo.png" alt="Twitter" class="logoFooter"></div>
-            <div class="logoContacto"><img src="img/ytlogo.png" alt="Youtube" class="logoFooter"></div>
-            <p>Copyright © 2022 | Todos los derechos reservados.</p>
-        </section>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-  integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
-</script>
+  </section>
+  <footer class="footer">
+    <section class="botonesContacto">
+      <p>Contacto via redes</p>
+      <div class="logoContacto"><img src="img/instalogo.png" alt="Instagram" class="logoFooter"></div>
+      <div class="logoContacto"><img src="img/fblogo.png" alt="facebook" class="logoFooter"></div>
+      <div class="logoContacto"><img src="img/twlogo.png" alt="Twitter" class="logoFooter"></div>
+      <div class="logoContacto"><img src="img/ytlogo.png" alt="Youtube" class="logoFooter"></div>
+      <p>Copyright © 2022 | Todos los derechos reservados.</p>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
