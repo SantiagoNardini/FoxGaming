@@ -17,10 +17,25 @@ header {
 }
 
 .Fox {
+    display: flex;
     background-color: white;
     font-size: 50px;
+    justify-content: center;
     text-align: center;
 
+}
+
+.bg-dark{
+background-color: orangered!important;
+}
+
+.navbar{
+    font-size: 20px;
+justify-content: flex-end;
+}
+
+a.nav-link{
+color: white!important;
 }
 
 .navLista {
@@ -358,3 +373,23 @@ color: orangered;
     text-decoration: none;
     }
 
+.card-support{
+margin: 40px;
+pad: 20px;
+
+}
+
+.btn-primary{
+background-color: orangered;
+border-color: black;
+}
+
+.btn-primary:hover{
+background-color: black;
+}
+
+.card-header{
+color: orangered;
+font-size: 18px;
+
+}

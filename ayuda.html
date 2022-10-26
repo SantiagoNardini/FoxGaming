@@ -14,117 +14,153 @@
 <body>
   <header>
     <h1 class="Fox">Fox Gaming</h1>
-    <nav>
-      <ul class="navLista">
-        <li class="navItem">
-        <li class="navItem"><a href="index.html">Inicio</a></li>
-        <li class="navItem"><a href="promociones.html">Promociones</a></li>
-        <li class="navItem"><a href="contacto.html">Contacto</a></li>
-        <li class="navItem"><a href="ayuda.html">FAQ</a></li>
-        <li class="navItem"><a href="sponsors.html">Sponsors</a></li>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="promociones.html">Promociones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ayuda.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sponsors.html">Sponsors</a>
+        </li>
       </ul>
-      </li>
     </nav>
-  </header>
-  <main>
+</body>
+</header>
+<main>
 
-    <section class="ayuda">
+  <section class="ayuda">
 
-      <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                ¿Puedo reservar un producto?
-              </button>
-            </h2>
-          </div>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ¿Puedo reservar un producto?
+            </button>
+          </h2>
+        </div>
 
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-              Se tomarán reservas solo de aquellos productos que estén en stock, esto es así ya que no podemos
-              garantizar
-              que un producto que no está en stock vuelva a ingresar, ni el precio que tendrá.
-              <br>
-              Las reservas duran 48hs y se toman una vez que el producto haya sido abonado en su totalidad.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                ¿Debo enviar el comprobante de pago de mi compra?
-              </button>
-            </h2>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              Sí, en el caso de que hayas abonado con una solicitud de dinero de Mercado Pago o transferencia bancaria.
-          Debés enviar el comprobante a nuestro Whatsapp con tu número de pedido. Recordá que tenés 48hs para enviarlo,
-          independientemente de los plazos que informe Mercado pago.
-          <br>
-          Los pedidos que no se registren abonados dentro de este plazo se eliminan.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                ¿Cómo se realizan los envíos?
-              </button>
-            </h2>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              Trabajamos con Correo Argentino, OCA o motomensajería.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingFourth">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                data-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
-                ¿Cuánto tarda en llegar el pedido?
-              </button>
-            </h2>
-          </div>
-          <div id="collapseFourth" class="collapse" aria-labelledby="headingFourth" data-parent="#accordionExample">
-            <div class="card-body">
-              El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra entre 3 y 7
-          días hábiles luego de acreditado el pago.
-            </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            Se tomarán reservas solo de aquellos productos que estén en stock, esto es así ya que no podemos
+            garantizar
+            que un producto que no está en stock vuelva a ingresar, ni el precio que tendrá.
+            <br>
+            Las reservas duran 48hs y se toman una vez que el producto haya sido abonado en su totalidad.
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <section class="botonesContacto">
-      <div class="enviarAbajo"></div>
-      <p>Contacto via redes</p>
-      <div class="logoContacto"><img src="img/instalogo.png" alt="Instagram" class="logoFooter"></div>
-      <div class="logoContacto"><img src="img/fblogo.png" alt="facebook" class="logoFooter"></div>
-      <div class="logoContacto"><img src="img/twlogo.png" alt="Twitter" class="logoFooter"></div>
-      <div class="logoContacto"><img src="img/ytlogo.png" alt="Youtube" class="logoFooter"></div>
-      <p>Copyright © 2022 | Todos los derechos reservados.</p>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Debo enviar el comprobante de pago de mi compra?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            Sí, en el caso de que hayas abonado con una solicitud de dinero de Mercado Pago o transferencia bancaria.
+            Debés enviar el comprobante a nuestro Whatsapp con tu número de pedido. Recordá que tenés 48hs para
+            enviarlo,
+            independientemente de los plazos que informe Mercado pago.
+            <br>
+            Los pedidos que no se registren abonados dentro de este plazo se eliminan.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿Cómo se realizan los envíos?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Trabajamos con Correo Argentino, OCA o motomensajería.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFourth">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+              ¿Cuánto tarda en llegar el pedido?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFourth" class="collapse" aria-labelledby="headingFourth" data-parent="#accordionExample">
+          <div class="card-body">
+            El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra entre 3 y
+            7
+            días hábiles luego de acreditado el pago.
+          </div>
+        </div>
+      </div>
     </div>
-    </section>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
-  </script>
+  </section>
+
+  <div class="card-support">
+    <div class="card-header">
+      Inconvenientes con la entrega
+    </div>
+    <div class="card-body">
+      <p class="card-text">• En el caso que no podamos concretar la entrega te contactaremos para pactar una nueva
+        visita.
+      </p>
+      <p class="card-text">• Si el producto no se encuentra en condiciones debes comunicarte con nosotros e indicar que
+        el pedido no ha llegado de forma correcta. Una vez revisado se pactara para hacer la devolucion correspondiente
+        hacia nosotros y el posterior envio del nuevo pedido
+      </p>
+      <p class="card-text">Si el inconveniente es otro o aún te quedan dudas podés contactarnos a través de nuestras
+        redes sociales.
+      </p>
+      <a href="#" class="btn btn-primary">Contactanos</a>
+    </div>
+  </div>
+
+
+
+
+</main>
+<footer class="footer">
+  <section class="botonesContacto">
+    <div class="enviarAbajo"></div>
+    <p>Contacto via redes</p>
+    <div class="logoContacto"><img src="img/instalogo.png" alt="Instagram" class="logoFooter"></div>
+    <div class="logoContacto"><img src="img/fblogo.png" alt="facebook" class="logoFooter"></div>
+    <div class="logoContacto"><img src="img/twlogo.png" alt="Twitter" class="logoFooter"></div>
+    <div class="logoContacto"><img src="img/ytlogo.png" alt="Youtube" class="logoFooter"></div>
+    <p>Copyright © 2022 | Todos los derechos reservados.</p>
+    </div>
+  </section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+  integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+</script>
 </body>
 
 </html>
