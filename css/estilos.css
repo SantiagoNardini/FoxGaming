@@ -196,9 +196,9 @@ a.nav-link {
     flex-direction: column;
 }
 
-.enviarContacto{
-background-color: orangered;
-color: white;
+.enviarContacto {
+    background-color: orangered;
+    color: white;
 }
 
 
@@ -368,48 +368,50 @@ h2.exclusivos {
 
 .sponsors {
     margin: auto;
-    width: 60%;
-    padding: 10px;
+    width: 70%;
 }
 
-.sponsorImg {
-    width: 500px;
-    height: 300px;
-}
 
 .promocionesPlaca:hover {
     transform: scale(1.5);
     transition: transform .2s;
 }
 
-.videoSponsor {
-    padding-left: 100px;
-    width: 500px;
-    height: 300px;
+
+.imgSponsor {
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.imgSponsor:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
 
 }
 
-.sponsor1 {
-    background-color: orangered;
-    border: 5px;
-    padding: 10px;
-    text-align: center;
-    display: inline-block
+.card-body-nvidia {
+    background-color: #76b900;
+    padding: 20px;
 }
 
-.sponsor2 {
-    border: 5px;
-    padding: 10px;
-    text-align: center;
-    display: inline-block
+.card-body-intel {
+    background-color: #11489b;
+    padding: 20px;
+    color: white;
+
 }
 
-.sponsor3 {
-    background-color: orangered;
-    border: 5px;
-    padding: 10px;
-    text-align: center;
-    display: inline-block
+.card-body-razer {
+    background-color: #1de52d;
+    padding: 20px;
+
+}
+
+
+.mb-3 {
+    padding: 20px;
+
 }
 
 /*AYUDA*/
