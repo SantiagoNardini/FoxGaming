@@ -16,14 +16,14 @@ header {
 
 .Fox {
   display: flex;
-  background-color: white;
+  background-color: #ffffff;
   font-size: 50px;
   justify-content: center;
   text-align: center;
 }
 
 .bg-dark {
-  background-color: orangered !important;
+  background-color: #ff4500 !important;
 }
 
 .navbar {
@@ -32,19 +32,10 @@ header {
 }
 
 a.nav-link {
-  color: white !important;
+  color: #ffffff !important;
 }
 a.nav-link:hover {
-  color: black !important;
-}
-
-.navLista {
-  font-size: 22px;
-  background: orangered;
-  padding: 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  color: #000000 !important;
 }
 
 .navItem {
@@ -52,19 +43,12 @@ a.nav-link:hover {
   margin-right: 2rem;
 }
 
-.bannerPrincipal {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: auto;
-}
-
 .sponsorsMain {
-  grid-template-columns: repeat(9, 1fr);
-  justify-items: center;
-  align-content: space-evenly;
-  background-color: orangered;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff4500;
 }
 
 .imagenSponsor {
@@ -100,8 +84,8 @@ a.nav-link:hover {
 }
 
 .botonesContacto {
-  color: black;
-  background-color: orangered;
+  color: #000000;
+  background-color: #ff4500;
   text-align: center;
   font-size: 22px;
   padding: 10px;
@@ -129,14 +113,14 @@ a.nav-link:hover {
 }
 
 .gridConsultas {
-  padding: 10px;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .enviarContacto {
-  background-color: orangered;
-  color: white;
+  background-color: #ff4500;
+  color: #ffffff;
 }
 
 input {
@@ -157,8 +141,8 @@ input {
 
 .gridMapa {
   display: flex;
-  padding-left: 100px;
   flex-direction: column;
+  padding-left: 100px;
 }
 
 .mapa {
@@ -199,14 +183,14 @@ iframe {
 .card-text-precio {
   text-align: center;
   font-size: 20px;
-  background-color: orangered;
-  color: white;
+  background-color: #ff4500;
+  color: #ffffff;
 }
 
 h2.exclusivos {
   margin: 5px;
-  color: white;
-  background-color: black;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .card-img-top:hover {
@@ -238,7 +222,7 @@ h2.exclusivos {
 .card-body-intel {
   background-color: #11489b;
   padding: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 .card-body-razer {
@@ -257,28 +241,27 @@ section.ayuda {
 }
 
 .btn-link {
-  color: orangered;
+  color: #ff4500;
 }
 .btn-link:hover {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
 .card-support {
   margin: 40px;
-  pad: 20px;
 }
 
 .btn-primary {
-  background-color: orangered;
-  border-color: black;
+  background-color: #ff4500;
+  border-color: #000000;
 }
 .btn-primary:hover {
-  background-color: black;
+  background-color: #000000;
 }
 
 .card-header {
-  color: orangered;
+  color: #ff4500;
   font-size: 18px;
 }
 
