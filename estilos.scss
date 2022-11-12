@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-$color-orange: linear-gradient(to bottom, #ff7900, #ef7100, #e06900, #d16200, #c25a00);
+$color-orange: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
 $color-white: #ffffff;
 $color-black: linear-gradient(to right top, #000000, #111111, #1b1b1b, #252525, #303030);
 
@@ -20,18 +20,22 @@ body {
 }
 
 header {
-    width: auto;
-    text-align: right;
-    list-style: none;
+    background-color: #E06618;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
 }
 
-.Fox {
+.logo{
     display: flex;
-    background-color: $color-white;
-    font-size: 50px;
-    justify-content: center;
-    text-align: center;
+    height: 150px;
+    width: auto;
+}
 
+.fox {
+    visibility: hidden;
+    display: none;
 }
 
 .bg-dark {
@@ -39,6 +43,7 @@ header {
 }
 
 .navbar {
+    display: flex;
     font-size: 20px;
     justify-content: flex-end;
 }
@@ -212,6 +217,7 @@ iframe {
     font-size: 20px;
     background-image: $color-orange;
     color: $color-white;
+    border-radius: 25px;
 }
 
 h2.exclusivos {

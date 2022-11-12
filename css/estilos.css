@@ -9,24 +9,30 @@ body {
 }
 
 header {
-  width: auto;
-  text-align: right;
-  list-style: none;
+  background-color: #E06618;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
 }
 
-.Fox {
+.logo {
   display: flex;
-  background-color: #ffffff;
-  font-size: 50px;
-  justify-content: center;
-  text-align: center;
+  height: 150px;
+  width: auto;
+}
+
+.fox {
+  visibility: hidden;
+  display: none;
 }
 
 .bg-dark {
-  background-image: linear-gradient(to bottom, #ff7900, #ef7100, #e06900, #d16200, #c25a00) !important;
+  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d) !important;
 }
 
 .navbar {
+  display: flex;
   font-size: 20px;
   justify-content: flex-end;
 }
@@ -48,7 +54,7 @@ a.nav-link:hover {
   grid-template-columns: repeat(9, 1fr);
   justify-items: center;
   align-content: space-evenly;
-  background-image: linear-gradient(to bottom, #ff7900, #ef7100, #e06900, #d16200, #c25a00);
+  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
 }
 
 .imagenSponsor {
@@ -98,7 +104,7 @@ a.nav-link:hover {
 
 .botonesContacto {
   background-image: linear-gradient(to right top, #000000, #111111, #1b1b1b, #252525, #303030);
-  background-image: linear-gradient(to bottom, #ff7900, #ef7100, #e06900, #d16200, #c25a00);
+  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
   text-align: center;
   font-size: 22px;
   padding: 10px;
@@ -132,7 +138,7 @@ a.nav-link:hover {
 }
 
 .enviarContacto {
-  background-image: linear-gradient(to bottom, #ff7900, #ef7100, #e06900, #d16200, #c25a00);
+  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
   color: #ffffff;
 }
 
@@ -195,8 +201,9 @@ iframe {
 .card-text-precio {
   text-align: center;
   font-size: 20px;
-  background-image: linear-gradient(to bottom, #ff7900, #ef7100, #e06900, #d16200, #c25a00);
+  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
   color: #ffffff;
+  border-radius: 25px;
 }
 
 h2.exclusivos {
@@ -266,7 +273,7 @@ section.ayuda {
 }
 
 .btn-primary {
-  background-image: linear-gradient(to bottom, #ff7900, #ef7100, #e06900, #d16200, #c25a00);
+  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
 }
 .btn-primary:hover {
   background-image: linear-gradient(to right top, #000000, #111111, #1b1b1b, #252525, #303030);
