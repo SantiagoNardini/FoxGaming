@@ -38,27 +38,37 @@ header {
     display: none;
 }
 
-.bg-dark {
-    background-image: $color-orange !important;
-}
-
-.navbar {
-    display: flex;
-    font-size: 20px;
+.navbar-nav {
+    list-style: none;
     justify-content: flex-end;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: $color-orange;
 }
 
-a.nav-link {
-    color: $color-white !important;
+.nav-link{
+    padding: 8px !important;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
     &:hover {
-        color: black !important;
-}
-}
+        color: black;
+}}
 
 .navItem {
-    list-style: none;
-    margin-right: 2rem;
+    padding: 1em;
 }
+
+@media screen and (max-width: 576px){
+    .navbar-nav {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+}}
 
 .sponsorsMain {
     display: grid;

@@ -27,28 +27,39 @@ header {
   display: none;
 }
 
-.bg-dark {
-  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d) !important;
-}
-
-.navbar {
-  display: flex;
-  font-size: 20px;
+.navbar-nav {
+  list-style: none;
   justify-content: flex-end;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
 }
 
-a.nav-link {
-  color: #ffffff !important;
+.nav-link {
+  padding: 8px !important;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
 }
-a.nav-link:hover {
-  color: black !important;
+.nav-link:hover {
+  color: black;
 }
 
 .navItem {
-  list-style: none;
-  margin-right: 2rem;
+  padding: 1em;
 }
 
+@media screen and (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .sponsorsMain {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
