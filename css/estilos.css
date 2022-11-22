@@ -73,6 +73,9 @@ header {
   height: 110px;
   width: auto;
 }
+.imagenSponsor:hover {
+  filter: invert(100%);
+}
 
 @media screen and (max-width: 1440px) {
   .imagenSponsor {
@@ -101,8 +104,9 @@ header {
 
 .armadoPc {
   margin: auto;
-  width: 80%;
-  padding: 10px;
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .bannerSecundario {
@@ -202,24 +206,27 @@ iframe {
 }
 /*PROMOCIONES*/
 .promocionesCards {
-  padding: 50px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .card-promociones {
   padding: 20px;
 }
 
-.card-text-precio {
+.cardTextPrecio {
+  width: 100%;
   text-align: center;
   font-size: 20px;
-  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
+  background-image: linear-gradient(to right top, #000000, #111111, #1b1b1b, #252525, #303030);
   color: #ffffff;
   border-radius: 25px;
 }
 
 h2.exclusivos {
+  padding: 15px;
   border-radius: 25px;
-  margin: 5px;
+  margin: 40px;
   color: #ffffff;
   background-image: linear-gradient(to right top, #000000, #111111, #1b1b1b, #252525, #303030);
 }
@@ -261,10 +268,6 @@ h2.exclusivos {
   padding: 20px;
 }
 
-.mb-3 {
-  padding: 20px;
-}
-
 /*AYUDA*/
 section.ayuda {
   padding: 20px;
@@ -292,6 +295,78 @@ section.ayuda {
 
 .card-header {
   font-size: 18px;
+}
+
+.tiempoLimitado {
+  display: flex;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-inline: 5%;
+  justify-content: space-evenly;
+}
+
+.cardPc {
+  max-width: 27%;
+  margin: 10px;
+  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
+  box-shadow: 2px 2px 10px #000000;
+  border-radius: 7px;
+  overflow: hidden;
+  flex: 1;
+}
+.cardPc:hover {
+  box-shadow: 2px 2px 10px orangered;
+}
+
+.imgcard {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  flex: 1;
+  width: 100%;
+}
+
+.infocard {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .tiempoLimitado {
+    flex-direction: column;
+    gap: 5rem;
+    padding-inline: 5%;
+  }
+  .cardPc {
+    align-self: center;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+  }
+  .infocard {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .cardPc {
+    min-width: 90%;
+    display: flex;
+    padding-bottom: 0;
+    align-items: center;
+  }
+  .tiempoLimitado {
+    flex-direction: column;
+    gap: 5rem;
+    padding-inline: 2%;
+    align-items: center;
+  }
+  .cardTextPrecio {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

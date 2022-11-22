@@ -82,7 +82,9 @@ header {
     margin: 10px;
     height: 110px;
     width: auto;
-}
+    &:hover {
+        filter: invert(100%);
+}}
 
 @media screen and (max-width: 1440px){
     .imagenSponsor {
@@ -111,8 +113,9 @@ header {
 
 .armadoPc {
     margin: auto;
-    width: 80%;
-    padding: 10px;
+    width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .bannerSecundario {
@@ -215,24 +218,27 @@ iframe {
 /*PROMOCIONES*/
 
 .promocionesCards{
-    padding: 50px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .card-promociones{
     padding: 20px;
 }
 
-.card-text-precio{
+.cardTextPrecio{
+    width: 100%;
     text-align: center;
     font-size: 20px;
-    background-image: $color-orange;
+    background-image: $color-black;
     color: $color-white;
     border-radius: 25px;
 }
 
 h2.exclusivos {
+    padding: 15px;
     border-radius: 25px;
-    margin: 5px;
+    margin: 40px;
     color: $color-white;
     background-image: $color-black;
 }
@@ -275,11 +281,6 @@ h2.exclusivos {
     padding: 20px;
 }
 
-
-.mb-3 {
-    padding: 20px;
-}
-
 /*AYUDA*/
 
 section.ayuda {
@@ -308,4 +309,78 @@ section.ayuda {
 
 .card-header {
     font-size: 18px;
+}
+
+
+.tiempoLimitado {
+    display: flex;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-inline: 5%;
+    justify-content: space-evenly;
+}
+
+.cardPc {
+    max-width: 27%;
+    margin: 10px;
+    background-image: $color-orange;
+    box-shadow: 2px 2px 10px #000000;
+    border-radius: 7px;
+    overflow: hidden;
+    flex: 1;
+    &:hover {
+        box-shadow: 2px 2px 10px orangered;
+}
+}
+
+.imgcard {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    flex: 1;
+    width: 100%;
+}
+
+.infocard {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+@media screen and (max-width: 900px){
+.tiempoLimitado {
+    flex-direction: column;
+    gap: 5rem;
+    padding-inline: 5%;
+}
+.cardPc {
+    align-self: center;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+.infocard {
+    padding: 0;
+}
+}
+
+@media screen and (max-width: 1250px){
+.cardPc {
+    min-width: 90%;
+    display: flex;
+    padding-bottom: 0;
+    align-items: center;
+}
+.tiempoLimitado {
+    flex-direction: column;
+    gap: 5rem;
+    padding-inline: 2%;
+    align-items: center;
+}
+.cardTextPrecio{
+    width: 80%;
+}
 }
