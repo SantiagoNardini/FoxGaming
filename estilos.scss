@@ -107,10 +107,6 @@ header {
     padding: 15px;
 }
 
-.ofertasExclusivas {
-    width: 200px;
-}
-
 .armadoPc {
     margin: auto;
     width: 100%;
@@ -159,11 +155,15 @@ header {
 .gridConsultas {
     @include flex-column;
     padding: 10px;
+    margin-left: 10px;
 }
 
 .enviarContacto {
     background-image: $color-orange;
     color: $color-white;
+    &:hover {
+        background-image: $color-black;
+}
 }
 
 input {
@@ -216,15 +216,6 @@ iframe {
 }
 
 /*PROMOCIONES*/
-
-.promocionesCards{
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-.card-promociones{
-    padding: 20px;
-}
 
 .cardTextPrecio{
     width: 100%;
@@ -363,7 +354,7 @@ section.ayuda {
     padding-bottom: 1.5rem;
 }
 .infocard {
-    padding: 0;
+    padding: 10px;
 }
 }
 

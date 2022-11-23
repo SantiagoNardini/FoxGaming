@@ -98,10 +98,6 @@ header {
   padding: 15px;
 }
 
-.ofertasExclusivas {
-  width: 200px;
-}
-
 .armadoPc {
   margin: auto;
   width: 100%;
@@ -150,11 +146,15 @@ header {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  margin-left: 10px;
 }
 
 .enviarContacto {
   background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
   color: #ffffff;
+}
+.enviarContacto:hover {
+  background-image: linear-gradient(to right top, #000000, #111111, #1b1b1b, #252525, #303030);
 }
 
 input {
@@ -205,15 +205,6 @@ iframe {
   }
 }
 /*PROMOCIONES*/
-.promocionesCards {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-
-.card-promociones {
-  padding: 20px;
-}
-
 .cardTextPrecio {
   width: 100%;
   text-align: center;
@@ -348,7 +339,7 @@ section.ayuda {
     padding-bottom: 1.5rem;
   }
   .infocard {
-    padding: 0;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 1250px) {
