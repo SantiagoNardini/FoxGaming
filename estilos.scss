@@ -4,7 +4,7 @@ $color-orange: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b
 $color-white: #ffffff;
 $color-black: linear-gradient(to right top, #000000, #111111, #1b1b1b, #252525, #303030);
 
-@mixin flex-column{
+@mixin flex-column {
     display: flex;
     flex-direction: column;
 }
@@ -16,7 +16,6 @@ $color-black: linear-gradient(to right top, #000000, #111111, #1b1b1b, #252525, 
 
 body {
     font-family: 'Roboto', sans-serif;
-
 }
 
 header {
@@ -27,7 +26,7 @@ header {
     height: 90px;
 }
 
-.logo{
+.logo {
     display: flex;
     height: 150px;
     width: auto;
@@ -49,26 +48,29 @@ header {
     background-image: $color-orange;
 }
 
-.nav-link{
+.nav-link {
     padding: 8px !important;
-    color: white;
+    color: $color-white;
     text-transform: uppercase;
     text-decoration: none;
+
     &:hover {
         color: black;
-}}
+    }
+}
 
 .navItem {
     padding: 1em;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .navbar-nav {
         flex-direction: column;
         justify-content: space-between;
         padding-left: 15px;
         padding-right: 15px;
-}}
+    }
+}
 
 .sponsorsMain {
     display: grid;
@@ -82,53 +84,43 @@ header {
     margin: 10px;
     height: 110px;
     width: auto;
+
     &:hover {
         filter: invert(100%);
-}}
+    }
+}
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
     .imagenSponsor {
         height: 90px;
-    }}
+    }
+}
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .imagenSponsor {
         height: 70px;
-        }}
+    }
+}
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 830px) {
     .sponsorsMain {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        }}
+    }
+}
 
 .exclusivos {
     text-align: center;
     padding: 15px;
 }
 
-.armadoPc {
-    margin: auto;
-    width: 100%;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-.bannerSecundario {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 15px;
-}
-
 .botonesContacto {
-    color: white;
+    color: $color-white;
     text-align: center;
 }
 
-.copyright{
-    color: white;
+.copyright {
+    color: $color-white;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -136,20 +128,14 @@ header {
     margin-top: 10px;
 }
 
-.mediosDePago{
+.mediosDePago {
     width: 60%;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     height: auto;
-
 }
 
-.logoContacto {
-    padding: 10px;
-    display: inline-block;
-}
-
-footer{
+footer {
     font-size: 16px;
     background-image: $color-orange;
     display: grid;
@@ -157,29 +143,19 @@ footer{
 }
 
 .secciones {
-    color: white;
-    display: flex;
-    flex-direction: column;
+    color: $color-white;
+    @include flex-column;
     align-items: center;
 }
 
-.marcaFooter{
+.marcaFooter {
     text-align: center;
     color: black;
     padding: 10px;
 }
 
-.marcaChicaFooter:hover{
+.marcaChicaFooter:hover {
     color: black;
-}
-
-.seccionesFooter {
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    width: 140px;
 }
 
 .logoFooter {
@@ -187,9 +163,10 @@ footer{
     margin: 10px;
     width: 50px;
     height: auto;
+
     &:hover {
         filter: invert(0%);
-}
+    }
 }
 
 /*CONTACTO*/
@@ -213,25 +190,14 @@ footer{
 .enviarContacto {
     background-image: $color-orange;
     color: $color-white;
+
     &:hover {
         background-image: $color-black;
-}
+    }
 }
 
 input {
     margin-bottom: 10px;
-}
-
-.contactoPersonal {
-    text-align: center;
-    padding: 20px;
-}
-
-.contactoForms {
-    box-sizing: border-box;
-    text-align: center;
-    padding-left: 20px;
-    font-size: 20px;
 }
 
 .gridMapa {
@@ -265,14 +231,15 @@ iframe {
         grid-template-columns: 100%;
         align-items: center;
     }
-    .gridConsultas{
+
+    .gridConsultas {
         margin: 0px;
     }
 }
 
 /*PROMOCIONES*/
 
-.cardTextPrecio{
+.cardTextPrecio {
     width: 100%;
     text-align: center;
     font-size: 20px;
@@ -305,26 +272,11 @@ h2.exclusivos {
     padding: 20px;
     margin: 0 auto;
     width: 80%;
+
     &:hover {
         transform: scale(1.1);
         transition: transform .2s;
-}
-}
-
-.card-body-nvidia {
-    background-color: #76b900;
-    padding: 20px;
-}
-
-.card-body-intel {
-    background-color: #11489b;
-    padding: 20px;
-    color: $color-white;
-}
-
-.card-body-razer {
-    background-color: #1de52d;
-    padding: 20px;
+    }
 }
 
 /*AYUDA*/
@@ -336,10 +288,11 @@ section.ayuda {
 
 .btn-link {
     color: black;
+
     &:hover {
         color: orangered;
         text-decoration: none;
-}
+    }
 }
 
 .card-support {
@@ -348,15 +301,15 @@ section.ayuda {
 
 .btn-primary {
     background-image: $color-orange;
+
     &:hover {
         background-image: $color-black;
-}
+    }
 }
 
 .card-header {
     font-size: 18px;
 }
-
 
 .tiempoLimitado {
     display: flex;
@@ -374,9 +327,10 @@ section.ayuda {
     border-radius: 7px;
     overflow: hidden;
     flex: 1;
+
     &:hover {
         box-shadow: 2px 2px 10px orangered;
-}
+    }
 }
 
 .cardPcNvidia {
@@ -387,9 +341,10 @@ section.ayuda {
     border-radius: 7px;
     overflow: hidden;
     flex: 1;
+
     &:hover {
         transform: scale(1.02);
-}
+    }
 }
 
 .cardPcIntel {
@@ -400,9 +355,10 @@ section.ayuda {
     border-radius: 7px;
     overflow: hidden;
     flex: 1;
+
     &:hover {
         transform: scale(1.02);
-}
+    }
 }
 
 .cardPcRazer {
@@ -413,23 +369,24 @@ section.ayuda {
     border-radius: 7px;
     overflow: hidden;
     flex: 1;
+
     &:hover {
         transform: scale(1.02);
-}
+    }
 }
 
-.bannersInferiores{
+.bannersInferiores {
     padding: 20px;
     text-align: center;
 }
 
-.imgBannerInferior{
+.imgBannerInferior {
     max-width: 100%;
     height: auto;
     box-shadow: 2px 2px 8px #000000;
 }
 
-.sponsorsSec{
+.sponsorsSec {
     display: flex;
     width: 100%;
     padding-top: 30px;
@@ -438,25 +395,28 @@ section.ayuda {
     justify-content: space-evenly;
 }
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1250px) {
     .cardPcNvidia {
         min-width: 90%;
         display: flex;
         padding-bottom: 0;
         align-items: center;
     }
+
     .cardPcIntel {
         min-width: 90%;
         display: flex;
         padding-bottom: 0;
         align-items: center;
     }
+
     .cardPcRazer {
         min-width: 90%;
         display: flex;
         padding-bottom: 0;
         align-items: center;
     }
+
     .sponsorsSec {
         flex-direction: column;
         gap: 5rem;
@@ -465,22 +425,25 @@ section.ayuda {
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     .cardPcNvidia {
         align-self: center;
         flex-direction: column;
         padding-bottom: 1.5rem;
     }
+
     .cardPcIntel {
         align-self: center;
         flex-direction: column;
         padding-bottom: 1.5rem;
     }
+
     .cardPcRazer {
         align-self: center;
         flex-direction: column;
         padding-bottom: 1.5rem;
     }
+
     .sponsorsSec {
         flex-direction: column;
         gap: 5rem;
@@ -506,45 +469,48 @@ section.ayuda {
 
 
 .infocard {
-    color: white;
+    color: $color-white;
     padding: 1rem;
     text-align: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     flex: 1;
 }
 
-@media screen and (max-width: 900px){
-.tiempoLimitado {
-    flex-direction: column;
-    gap: 5rem;
-    padding-inline: 5%;
-}
-.cardPc {
-    align-self: center;
-    flex-direction: column;
-    padding-bottom: 1.5rem;
-}
-.infocard {
-    padding: 10px;
-}
+@media screen and (max-width: 900px) {
+    .tiempoLimitado {
+        flex-direction: column;
+        gap: 5rem;
+        padding-inline: 5%;
+    }
+
+    .cardPc {
+        align-self: center;
+        flex-direction: column;
+        padding-bottom: 1.5rem;
+    }
+
+    .infocard {
+        padding: 10px;
+    }
 }
 
-@media screen and (max-width: 1250px){
-.cardPc {
-    min-width: 90%;
-    display: flex;
-    padding-bottom: 0;
-    align-items: center;
-}
-.tiempoLimitado {
-    flex-direction: column;
-    gap: 5rem;
-    padding-inline: 2%;
-    align-items: center;
-}
-.cardTextPrecio{
-    width: 80%;
-}
+@media screen and (max-width: 1250px) {
+    .cardPc {
+        min-width: 90%;
+        display: flex;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    .tiempoLimitado {
+        flex-direction: column;
+        gap: 5rem;
+        padding-inline: 2%;
+        align-items: center;
+    }
+
+    .cardTextPrecio {
+        width: 80%;
+    }
 }

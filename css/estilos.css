@@ -40,7 +40,7 @@ header {
 
 .nav-link {
   padding: 8px !important;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -98,28 +98,13 @@ header {
   padding: 15px;
 }
 
-.armadoPc {
-  margin: auto;
-  width: 100%;
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-
-.bannerSecundario {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding: 15px;
-}
-
 .botonesContacto {
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 
 .copyright {
-  color: white;
+  color: #ffffff;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -134,11 +119,6 @@ header {
   height: auto;
 }
 
-.logoContacto {
-  padding: 10px;
-  display: inline-block;
-}
-
 footer {
   font-size: 16px;
   background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
@@ -147,7 +127,7 @@ footer {
 }
 
 .secciones {
-  color: white;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,15 +141,6 @@ footer {
 
 .marcaChicaFooter:hover {
   color: black;
-}
-
-.seccionesFooter {
-  text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  width: 140px;
 }
 
 .logoFooter {
@@ -210,18 +181,6 @@ footer {
 
 input {
   margin-bottom: 10px;
-}
-
-.contactoPersonal {
-  text-align: center;
-  padding: 20px;
-}
-
-.contactoForms {
-  box-sizing: border-box;
-  text-align: center;
-  padding-left: 20px;
-  font-size: 20px;
 }
 
 .gridMapa {
@@ -295,22 +254,6 @@ h2.exclusivos {
 .imgSponsor:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
-}
-
-.card-body-nvidia {
-  background-color: #76b900;
-  padding: 20px;
-}
-
-.card-body-intel {
-  background-color: #11489b;
-  padding: 20px;
-  color: #ffffff;
-}
-
-.card-body-razer {
-  background-color: #1de52d;
-  padding: 20px;
 }
 
 /*AYUDA*/
@@ -487,7 +430,7 @@ section.ayuda {
 }
 
 .infocard {
-  color: white;
+  color: #ffffff;
   padding: 1rem;
   text-align: center;
   align-items: center;
