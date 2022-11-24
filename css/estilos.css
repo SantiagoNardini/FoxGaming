@@ -114,11 +114,24 @@ header {
 }
 
 .botonesContacto {
-  background-image: linear-gradient(to right top, #000000, #111111, #1b1b1b, #252525, #303030);
-  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
+  color: white;
   text-align: center;
-  font-size: 22px;
-  padding: 10px;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  grid-area: 2/1/3/4;
+  margin-top: 10px;
+}
+
+.mediosDePago {
+  width: 60%;
+  display: block;
+  margin: auto;
+  height: auto;
 }
 
 .logoContacto {
@@ -126,9 +139,47 @@ header {
   display: inline-block;
 }
 
+footer {
+  font-size: 16px;
+  background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.secciones {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marcaFooter {
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+.marcaChicaFooter:hover {
+  color: black;
+}
+
+.seccionesFooter {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 140px;
+}
+
 .logoFooter {
+  filter: invert(100%);
+  margin: 10px;
   width: 50px;
   height: auto;
+}
+.logoFooter:hover {
+  filter: invert(0%);
 }
 
 /*CONTACTO*/
@@ -202,6 +253,9 @@ iframe {
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
+  }
+  .gridConsultas {
+    margin: 0px;
   }
 }
 /*PROMOCIONES*/
