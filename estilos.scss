@@ -514,3 +514,47 @@ section.ayuda {
         width: 80%;
     }
 }
+
+#hamnav {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #e06618, #d65a15, #cb4e12, #c14210, #b6360d);
+  }
+  
+  
+  #hamitems { display: flex; }
+  #hamitems a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+  }
+  
+  #hamitems a:hover { background: #1b1b1b; }
+  
+  
+  #hamnav label, #hamburger { display: none; }
+  
+  
+  @media screen and (max-width: 768px){
+    
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+      text-align: center;
+    }
+   
+   
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
